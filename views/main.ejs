@@ -31,10 +31,13 @@
         <!-- Header -->
         <header id="header">
             <h1>抽奖吧！！！兄弟！</h1>
+            <a href="javascript:void(0);" id="wechatJump">
+            <img alt="\" src="images/erweima.jpg" style="width: 55px; height: 55px;" />
+                </a>
             <p>Mac？ &nbsp;&bull;&nbsp; Iphone? &nbsp;&bull;&nbsp; 女朋友？</p>
             <link rel="stylesheet" type="text/css" href="css/btn3.css">
             <div class="center">
-                <a class="spinningeffect" href="#" >
+                <a class="spinningeffect" href="javascript:void(0);" id="startJump">
                     <img src="images/blogger-logo1.jpg" />
                 </a>
             </div>
@@ -44,7 +47,9 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <span class="copyright">&copy; Untitled. Design.</span>
+            <a href="javascript:void(0)">
+            <span class="copyright" id="settingBtn">&copy; 配置.</span>
+            </a>
         </footer>
 
     </div>
@@ -53,4 +58,19 @@
 </html>
 
 
-<script src="js\commen\login.js" type="text/javascript"></script>
+<!-- 成功提示 弹出层 -->
+<div class="textTip1 textTips1" style="display:none;" id="showTips2">
+    <img alt="\" src="images/erweima.jpg" style="width: 450px; height: 429px;" />
+    <!--<dl>-->
+        <!--<dt id="textTipsTitle1">&nbsp;</dt>-->
+        <!--<dd id="textTipsContent1"></dd>-->
+    <!--</dl>-->
+</div>
+
+<script src="js\commen\jquery-2.1.4.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/layer/layer.js" ></script>
+<script src="js\commen\jump.js" type="text/javascript"></script>
+
+<script  type="text/javascript" src="js/jcloud/gz-new-utils.js"></script>
+<script  type="text/javascript" src="js/jcloud/gz-new-utils-page.js"></script>
+

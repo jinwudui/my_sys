@@ -5,7 +5,7 @@
 
 loginUser =function(userName,passwd){
     $.ajax({
-        url:"/login",
+        url:"/mql/login",
         type:"GET",
         async: false,
         data:{
@@ -16,14 +16,16 @@ loginUser =function(userName,passwd){
         timeout:10000,
         success: function(d) {
             if(d.code == 200){
-                if(d.data){
-                    alert("成功");
+                if(d.data.length > 0){
                     document.location.href = '/main';
+                    alert("成功");
                 }
             }else{
+                alert("失败");
                 return;
             }
-            return d;
+            //alert("成功");
+            //document.location.href = '/main';
         },
         error:function(result) {
             alert("失败");
